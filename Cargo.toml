@@ -1,0 +1,10 @@
+[package]
+name = "drop-the-line"
+version = "0.0.1"
+
+[dependencies]
+clap = { version = "4.2.1", features = ["derive"] }
+
+[[bin]]
+name = "drop-the-line"
+path = "src/main.rs"
