@@ -48,7 +48,7 @@ fn main() {
     match ask(&input, &lines[input.line_number()]) {
         true => {
             lines.remove(input.line_number());
-            let content = prepare_content(lines);//lines.join("\r\n").push_str("\r\n");
+            let content = prepare_content(lines);
             let mut f = File::create(input.filename).expect("Cannot open file");
             f.write_all(content.as_bytes())
                 .expect("Unable to write file");
